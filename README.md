@@ -6,7 +6,7 @@ A simple file-based datastore for text files in Bun.
 
 Marinara sauce is the epitome of italian cuisine – it doesn't get more simple yet delicious than this!
 
-## why
+## how to use
 
 writing and saving text-files to a given folder isnt that hard.
 marinara helps with versioning and some boilerplate-stuff.
@@ -19,8 +19,6 @@ if another datapoint with the same key is written, marinara saves the new versio
 if you read the key "recipe", marinara will check if anything for this key exists and will return the contents of the latest file (in this case "1.txt").
 
 that's it.
-
-## how to use
 
 ```ts
 
