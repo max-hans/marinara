@@ -12,7 +12,7 @@ class Store {
     this.location = location;
   }
 
-  read = async (key: string): Promise<string | null> => {
+  read = async (key: string): Promise<string> => {
     const dir = join(this.location, key);
     if (await exists(dir)) {
       const fileCount = await getNumOfFiles(dir);
