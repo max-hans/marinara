@@ -26,7 +26,6 @@ class Store {
 
   write = async (key: string, content: string): Promise<void> => {
     const dir = join(this.location, key);
-    console.log("dir", dir);
     await ensureDir(dir);
     const fileCount = await getNumOfFiles(dir);
     const filename = `${fileCount}.txt`;
